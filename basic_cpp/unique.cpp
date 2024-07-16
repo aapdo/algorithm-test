@@ -42,8 +42,6 @@ int main(){
     for(int i : v) cout << i << ' '; // 2 1 2 ...
     cout << "\n";
 
-
-
     return 0;
     
 }
