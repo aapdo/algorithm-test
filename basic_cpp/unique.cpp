@@ -1,6 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+/**
+ * set과 unique 중 중복 제거를 위해 어떤 것을 사용할까?
+ * 
+ * set을 사용하는 경우
+ * 1. 중복된 배열 vector가 있음.
+ * 2. set으로 중복 제거
+ * 3. 다시 새로운 vector에 중복 없는 값들을 넣음.
+ * 
+ * 속도 자체는 비슷한 듯... 근데 그냥 Erase 쓰는게 편한 것 같아.
+*/
+
 int main(){
     vector<int> v; // 1 1 2 2 3 3 4 4 5 5
     for (int i = 1; i <= 5; i++){
