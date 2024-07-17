@@ -21,10 +21,18 @@ struct Point{
         return x > a.x;
     }
 };
+// 최소 힙 구조를 만들 때 사용함.
+// priority_queue<int, vector<int>, cmp> pq;
+struct cmp{
+    bool operator () (const int& a, const int& b){
+        return a > b;
+    }
+};
 int main(){
     priority_queue<int, vector<int>, greater<int> > pq; //오름차순
     priority_queue<int> pq2; // 내림차순
     priority_queue<int, vector<int>, less<int> > pq3; // 내림차순
+    priority_queue<int, vector<int>, cmp> pq4; // 최소힙 -> 작은게 우선순위 높음. 
     for(int i = 5; i >= 1; i--){
         pq.push(i);
         pq2.push(i);
