@@ -3,6 +3,9 @@ using namespace std;
 vector<vector<int>> v;
 vector<vector<int>> v2(10, vector<int>(10, 0)); 
 vector<int> v3[10];
+
+// 뭘 써도 상관 없음.
+// 2차원이라는 점을 생각해서 사용하면 됨. 
 void go(vector<vector<int>> &v){
     v[0][0] = 100;
 }
