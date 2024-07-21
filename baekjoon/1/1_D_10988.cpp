@@ -6,6 +6,8 @@ using namespace std;
  * 앞으로 읽을 때와 거꾸로 읽을 때 똑같은 단어를 말함.
  * 
 */
+
+/*
 string input;
 int a[55], h;
 bool flag = true;
@@ -22,5 +24,17 @@ int main(){
     }
     if(flag) cout << "1";
     else cout << "0";
-    
+}
+*/
+/**
+ * 나는 인덱스로 비교했는데 
+ * Reverse 해서 비교해도 된다.. 
+*/
+string s, temp;
+int main(){
+    cin >> s;
+    temp = s;
+    reverse(temp.begin(), temp.end());
+    if(temp == s) cout << 1;
+    else cout << 0;
 }
