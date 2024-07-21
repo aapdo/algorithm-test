@@ -2,6 +2,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// counting 문제이다. 맵과 배열 둘다 가능.
+
 map<char, int> mp;
 int n;
 string s;
