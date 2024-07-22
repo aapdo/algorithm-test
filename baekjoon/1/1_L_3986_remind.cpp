@@ -1,6 +1,7 @@
 // https://www.acmicpc.net/problem/3986
 #include<bits/stdc++.h>
 using namespace std;
+// 짝을 지어서 없애거나.. 등등일 땐 스택을 한번 생각해보자.
 int n, ret = 0, cnt = 0, start, flag, even;
 string s;
 stack<char> stk;
