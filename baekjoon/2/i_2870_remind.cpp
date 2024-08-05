@@ -9,6 +9,12 @@ vector<string> v;
 void pushV(string s){
     if(s.size() == 0) return;
     int idx = -1;
+    /*
+    while(true){
+        if(s.size() && s.front() == '0') s.erase(s.begin());
+        else break;
+    }
+    */
     if(s[0] != '0') v.push_back(s);
     else{
         for(int i = 0; i < s.size(); i++){
