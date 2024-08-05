@@ -1,9 +1,10 @@
 // https://www.acmicpc.net/problem/2870
 #include<bits/stdc++.h>
 using namespace std;
-#define long long ll
 string s, tmp_s;
 int n, tmp;
+// 10글자가 넘으면 int 불가,
+// 100글자가 넘으면 long long 불가 
 vector<string> v;
 void pushV(string s){
     if(s.size() == 0) return;
