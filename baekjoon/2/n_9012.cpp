@@ -1,4 +1,7 @@
 // https://www.acmicpc.net/problem/9012
+/*
+짝 맞추기, 괄호, 폭발 .. 같은건 스택을 쓰면 유용하다.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 int t;
