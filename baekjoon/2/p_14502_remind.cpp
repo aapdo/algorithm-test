@@ -22,7 +22,7 @@ void dfs(int y, int x){
         int nx = x + dx[i];
         if(ny >= n || ny < 0 || nx >= m || nx < 0) continue;
         if(a[ny][nx] == 0){
-            a[ny][nx] = a[y][x]+1;
+            a[ny][nx] = 3;
             dfs(ny, nx);
         } 
     }
@@ -45,9 +45,9 @@ int main(){
 
             for(int k = j+1; k < n*m; k++){
                 if(a[k / m][k % m] != 0) continue;
-                a[i/m][i%m] = 3;
-                a[j/m][j%m] = 3;
-                a[k/m][k%m] = 3;
+                a[i/m][i%m] = 1;
+                a[j/m][j%m] = 1;
+                a[k/m][k%m] = 1;
                 memset(v, 0, sizeof(v));
                 
                 for(int ii = 0; ii < n; ii++){
