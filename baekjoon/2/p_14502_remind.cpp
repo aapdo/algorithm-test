@@ -10,13 +10,11 @@ using namespace std;
 int n, m;
 int a[10][10];
 int base[10][10];
-int v[10][10];
 int dy[] = {-1, 0, 1, 0};
 int dx[] = {0, 1, 0, -1};
 int cnt = 0;
 int maxi = -1;
 void dfs(int y, int x){
-    v[y][x] = 1;
     for(int i = 0; i < 4; i++){
         int ny = y + dy[i];
         int nx = x + dx[i];
@@ -48,7 +46,6 @@ int main(){
                 a[i/m][i%m] = 1;
                 a[j/m][j%m] = 1;
                 a[k/m][k%m] = 1;
-                memset(v, 0, sizeof(v));
                 
                 for(int ii = 0; ii < n; ii++){
                     for(int jj = 0; jj < m; jj++){
